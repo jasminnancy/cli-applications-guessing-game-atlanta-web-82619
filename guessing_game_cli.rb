@@ -7,7 +7,7 @@ def run_guessing_game
   prompt user
   user_input
   
-  if user_input == random
+  if user_input.to_i == random
     puts "you guessed the correct number!"
   elsif user_input != random
     puts "Sorry! The computer guessed #{random}"
