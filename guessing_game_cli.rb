@@ -1,14 +1,17 @@
 # Code your solution here!
 def run_guessing_game
   random = rand(1..6)
-  prompt user
-  gets.chomp
+  user_input = gets.chomp
   
-  if gets.chomp == random
+  random
+  prompt user
+  user_input
+  
+  if user_input == random
     puts "you guessed the correct number!"
-  elsif gets.chomp != random
+  elsif user_input != random
     puts "Sorry! The computer guessed #{random}"
-  elsif gets.chomp.downcase == "exit"
+  elsif user_input.downcase == "exit"
     puts "Goodbye!"
   end
 end
