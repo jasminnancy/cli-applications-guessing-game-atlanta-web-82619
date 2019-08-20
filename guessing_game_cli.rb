@@ -1,6 +1,7 @@
 # Code your solution here!
 def run_guessing_game
   random = rand(1..6)
+  promt_user
   user_input = gets.chomp
   
   if user_input.to_i == random
