@@ -9,4 +9,5 @@ def run_guessing_game
   elsif gets.chomp != random
     puts "Sorry! The computer guessed #{random}"
   elsif gets.chomp.downcase == "exit"
+    puts "Goodbye!"
 end
